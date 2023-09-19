@@ -1,0 +1,23 @@
+page_customer_orderlist.php
+tbl_orderlist	  = trans_status  0 to 1(payment transac has been made)
+tbl_cart
+
+order_status	  = 0(stay in cart),1(send to tbl_orderlist/ its been place to oder)
+tbl_cart
+
+vendor_status	  = 0(Pending),1(Accept),2(Canceled)
+																
+food_Status	  = 0(pending), 1(preparing), 2(ready for pick-up), 3(ready for deliver), 4(canceled)
+pay_method	  = 1(over the counter),2(cash on delivery)
+
+del_Status	  = 0(Pending Pick-Up),1(Accept pick-up)
+tbl_delivery	  = delivery_process 1,
+		  = payment_status 1
+
+tbl_errand_delivery_info =1(payment_status = PAID/PAyment Success)
+tbl_errand_delivery_info = (remit_Status) 1=remit money , 0/null=pending, 2-Done TRansaction
+			 = payment_met (1 - cash) (2-gcash)
+
+tbl_remittance	  = (remit_Status)1-Remit money (errand remit the money to vendor), 2-DONE Tansaction(Accept the money by vendor) 
+		  = pay_method	  = 1(over the counter),2(cash on delivery)
+
